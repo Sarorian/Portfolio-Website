@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Contact Owen Wilson</title>
+	<link rel="shortcut icon" href="img/freezing-face-emoji.png">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+<header class="page-header">
+   <img src="img/owen_logo.png" alt="logo" class="page-header__item" id="logo">
+   <nav class="main-navigation page-header__item">
+      <ul role="menubar" class="navigation-list">
+         <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item">Home</a>
+         </li >
+         <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+         </li>
+         <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+         </li>
+         <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item--active">Contact</a>
+         </li>
+      </ul>
+   </nav>
+</header>
+<main class="profile">
+	<h1><a href="mailto:shamowen5@gmail.com">Contact me</a></h1>
+	<div>
+		CareerFoundry GmbH<br>
+		530 S 44th Str.<br>
+		80305 Boulder<br>
+		Colorado<br>
+		<br>
+		Tel <a href="tel:+17209844929"> +1 (720)-984-4929</a><br>
+		<a href="mailto:shamowen5@gmail.com">shamowen5@gmail.com</a>
+	</div>
+</main>
+
+<footer>
+	<form action="" method="post" id="contact-form">
+		<label class="standard-label" for="contact-email">E-mail: </label>
+		<input type="email" id="contact-email" required>
+
+		<label class="standard-label" for="tel-form">Telephone: </label>
+		<input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="tel-form">
+
+		<label class="standard-label" for="message-form">Message: </label>
+		<textarea maxlength="240" id="message-form" required></textarea>
+
+		<input type="submit" value="Send message">
+	</form>
+</footer>
+
+<script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
