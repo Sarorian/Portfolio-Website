@@ -9,7 +9,7 @@ Secondary Color (Orange): #e0b354;
 :root {
 	--primary-color:#357b70 ;
 	--secondary-color: #e0b354;
-	--dark-grey: #2b2b2b;
+	--white: #fff;
 	--primary-color-visited: #05676e;
 	--yellow-sun: #edc655;
 	--orange-sun: #f76414;
@@ -55,6 +55,10 @@ a:active {
 	color: #489c79;
 }
 
+a.button:visited {
+	color: white;
+}
+
 .button, button {
   border: none;
   display: inline-block;
@@ -76,15 +80,26 @@ button:focus,
   opacity: 0.8;
 }
 
-.button__secondary {
-	background-color: var(--secondary-color);
-	color: var(--dark-grey);
+
+
+#work-status {
+	margin-top: 2em;
+}
+
+#work {
+	font-weight: bold;
+}
+
+#status {
+	margin-left: 0.5em;
+	padding: 0.5em;
+	background-color: #dfc00a;
+	border-radius: 0.5em;
 }
 
 .navigation-list__item--active {
   text-decoration: none;
 }
-
 
 .profile__portrait {
 	float: left;
@@ -102,10 +117,38 @@ button:focus,
 	margin: 0 auto;
 }
 
+.contact {
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#info {
+	display: block;
+}
+
+#info div span:nth-child(odd) {
+	display: inline-block;
+	font-weight: bold;
+	width: 12em;
+}
+
+#info div span:nth-child(even) {
+	margin-left: 2em;
+}
+
+#info div:last-child {
+	margin-bottom: 2em;
+}
+
 .about__list {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
+
+.about__list li:last-child {
+	margin-bottom: 2em;
 }
 
 .about {
@@ -119,6 +162,10 @@ button:focus,
 
 * {
 	box-sizing: border-box;
+}
+
+#work {
+	text-align: center;
 }
 
 .page-footer {
@@ -146,6 +193,20 @@ button:focus,
 	height: 50px;
 }
 
+#contact-form {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-form input[type='submit'] {
+	margin-top: 2em;
+}
+
+#contact-form textarea {
+	height: 6em;
+}
+
 .page-header__item:last-child {
 	flex-grow: 1;
 	text-align: right;
@@ -170,15 +231,17 @@ button:focus,
 @supports (display: grid){
 .grid {
 	display: grid;
+	margin: 0 4em;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 20px;
 	}
 
 .grid__item {
-	background-color: var(--dark-grey);
+	background-color: var(--white);
 	width: auto;
 	min-height: auto;
 	margin: 0;
+	padding: 1em;
 	}
 
 .grid__item:last-child {
