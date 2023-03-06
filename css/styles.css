@@ -313,3 +313,29 @@ button:focus,
 .cloud-back {
 	animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+
+
+@media all and (max-width: 677px) {
+	#info div span:nth-child(even) {
+		display: block;
+		text-indent: 0.5em;
+	}
+}
+
+@media all and (max-width: 581px) {
+	#status {
+		margin-left: 17.5em;
+		padding: 0.3em;
+	}
+}
+
+@media all and (max-width: 485px) {
+	#work-status {
+		display: flex;
+		justify-content: center;
+	}
+	#status {
+		margin-left: 0.5em;
+	}
+}
